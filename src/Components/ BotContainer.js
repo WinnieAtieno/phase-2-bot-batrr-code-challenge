@@ -8,7 +8,7 @@ function BotContainer() {
   const [botArmy, setBotArmy] = useState([]);
 // fetching data
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://json-server-vercel-green-ten.vercel.app/bots")
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []); //ensures data is fetched once
@@ -28,7 +28,7 @@ function removeBotFromMyArmy (botId) {
 
   // delete clicked bot from database and remove from my bot army list if it is in it and update the bots list
   const deleteBot = (bot) => {
-    fetch(`http://localhost:3000/bots/${bot.id}`, {
+    fetch(`https://json-server-vercel-green-ten.vercel.app/bots/${bot.id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
