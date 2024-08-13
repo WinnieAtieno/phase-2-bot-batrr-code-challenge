@@ -16,7 +16,9 @@ To remove a bot from your army, click on the bot within the YourBotArmy componen
 Discharge a Bot: To permanently remove a bot from your army, click the button marked with an "x" next to the bot.
 
 
+
 # Usage instructions
+Link to live site is  https://phase-2-bot-batrr-code-challenge.vercel.app/
 
 ## Install Dependencies
 Before running the application, make sure you have all necessary dependencies installed. In the project directory, run **npm install**
